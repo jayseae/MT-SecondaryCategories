@@ -1,5 +1,17 @@
 # ===========================================================================
-# Copyright 2006, Everitz Consulting (mt@everitz.com)
+# A Movable Type plugin to loop over all additional categories on an entry.
+# Copyright 2006 Everitz Consulting <everitz.com>.
+#
+# This program is free software:  You may redistribute it and/or modify it
+# it under the terms of the Artistic License version 2 as published by the
+# Open Source Initiative.
+#
+# This program is distributed in the hope that it will be useful but does
+# NOT INCLUDE ANY WARRANTY; Without even the implied warranty of FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# You should have received a copy of the Artistic License with this program.
+# If not, see <http://www.opensource.org/licenses/artistic-license-2.0.php>.
 # ===========================================================================
 package MT::Plugin::SecondaryCategories;
 
@@ -13,8 +25,8 @@ my $about = {
   name => 'MT-SecondaryCategories',
   description => 'Loop over all additional categories on an entry.',
   author_name => 'Everitz Consulting',
-  author_link => 'http://www.everitz.com/',
-  version => '0.0.1'
+  author_link => 'http://everitz.com/',
+  version => '0.0.2'
 };
 $SecondaryCategories = MT::Plugin::SecondaryCategories->new($about);
 MT->add_plugin($SecondaryCategories);
